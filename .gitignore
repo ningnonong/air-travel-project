@@ -1,0 +1,9 @@
+# Ignore all Python bytecode
+*.pyc
+__pycache__/
+
+# Ignore virtual environment
+.venv/
+
+# Ignore redundant files
+PJitrapon/

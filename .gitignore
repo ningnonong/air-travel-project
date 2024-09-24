@@ -7,3 +7,4 @@ __pycache__/
 
 # Ignore redundant files
 PJitrapon/
+.DS_Store

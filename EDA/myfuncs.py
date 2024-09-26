@@ -1,62 +1,71 @@
-#%% Imports
+#%% imports
 import requests
-import pandas as pd
 from bs4 import BeautifulSoup
-from collections import defaultdict
+import pandas as pd
 
 #%% 
 def extract_FRED_data(url,variable):
-
-    # Make a GET request to extract data from the url
+    '''
+    Extract Economic Data from FRED API
+    '''
     response = requests.get(url)
     assert response.status_code == 200, "GET Request Failed"
 
-    # Extract table from the url
-    soup = BeautifulSoup(response.text,'lxml')
+    soup = BeautifulSoup(response.text, 'lxml')
     table = soup.find('table')
 
-    # Extract headers from the table
-    header_rows = table.find('thead').find_all('tr')
-    main_header_row = header_rows[1] # Second header row is the main header row which actually contains headers
-    headers = [header.get_text(strip=True) for header in main_header_row.find_all('th')] #Extract table header (th) elements from the main header row
-    # print(headers) #['', 'Name', '2023', 'PrecedingPeriod', 'Year Agofrom Period']
+    # Extract data based on inspection of meta data
+    meta_headers = table.find('thead').find_all('tr')[1].find_all('th') # th elements of second header row
+    headers = [meta_header.get_text(strip=True) for meta_header in meta_headers]
+    # headers >> ['', 'Name', '2023', 'PrecedingPeriod', 'Year Agofrom Period']
 
-    # Extract unit
-    unit = table.find('thead').find('th', id='table-unit-heading').get_text(strip=True)
-    # unit_header_row = header_rows[0]
-    # unit = unit_header_row.find('th', id='table-unit-heading').get_text(strip=True)
+    unit = table.find('thead').find_all('tr')[0].find('th', id='table-unit-heading').get_text(strip=True) #th element with specified id of first header row
 
-    # Create a df to store data from the table with column names based on headers extracted
-    df = pd.DataFrame(columns=headers[1:-1]) # Skip first (check box) and last (duplicated info with second last) headers
-    # Extract data row by row
-    body_rows = table.find('tbody').find_all('tr')
+    body_rows = table.find('tbody').find_all('tr') # all rows in the table body
+
+    # Tabulate the content into a df
+    df = pd.DataFrame(columns=headers[1:-1]) # Skip first header, an empty string for checkbox
     for body_row in body_rows:
-
-        row_data = [] # to store data element-wise
+        # Extract row data
+        row_data = [] # a list to store each row element
         state_name = body_row.find('th').find('span',class_='fred-rls-elm-nm').get_text(strip=True)
-        values = [value.get_text(strip=True) for value in body_row.find_all('td', class_='fred-rls-elm-vl-td')[:-1]] # Skip the last element; extract 2023 and 2022 data
+        meta_values = body_row.find_all('td', class_='fred-rls-elm-vl-td')[:-1]
+        values = [meta_value.get_text(strip=True) for meta_value in meta_values]
         row_data.append(state_name)
         row_data += values
-        
-        # Append new data row to df
+        # Add row data to the df
         length = len(df)
         df.loc[length] = row_data
+
     df.rename(columns= {
         'Name':'State Name',
-        '2023': f'{variable} [{unit}] (2023)',
-        'PrecedingPeriod': f'{variable} [{unit}] (2022)'      
-    }, inplace=True)
+        # '2023': '2023' #f'{variable} [{unit}] (2023)',
+        'PrecedingPeriod': '2022' #f'{variable} [{unit}] (2022)'      
+    }, inplace=True)   
 
-    value_cols = [f'{variable} [{unit}] (2023)',f'{variable} [{unit}] (2022)']
-    for value_col in value_cols:
-        df[value_col] = df[value_col].str.replace(',','').astype(float)
+    df_2023 = df[['State Name','2023']].reset_index(drop=True).copy()
+    df_2023['Year'] = 2023
+    df_2023.rename(columns={'2023':f'{variable} [{unit}]'},inplace=True)
 
-    return df
+    df_2022 = df[['State Name','2022']].reset_index(drop=True).copy()
+    df_2022['Year'] = 2022
+    df_2022.rename(columns={'2022':f'{variable} [{unit}]'},inplace=True)
+    
+    df_final = pd.concat([df_2023, df_2022], ignore_index=True)
+
+    # Remove commas from the numbers and convert to float
+    df_final[f'{variable} [{unit}]'] = df_final[f'{variable} [{unit}]'].str.replace(',','').astype(float)
+    
+    return df_final
+
 #%%
-def extract_ACS(api_key, year, variables, state_code=None):
+def extract_ACS_data(api_key, year, state_code=None):
     '''
     Extract state-level ACS data using a session (if provided).
     '''
+    # Selected economic and socio-demographic variables
+    variables = ['B19013_001E','B19301_001E','B23025_005E','B23025_003E','B19083_001E','B01003_001E','B01002_001E','B05002_013E','B25077_001E']
+    
     # Define API Base URL for ACS 1-Year Estimates
     base_url = f'https://api.census.gov/data/{year}/acs/acs1'
     variables_str = ','.join(variables)
@@ -119,10 +128,8 @@ def preprocess_ACS(acs_df):
     acs_df.drop(columns=['Unemployed Population','Employed Population','Foreigner Population'], inplace=True)
     return acs_df
 
-def extract_and_preprocess_ACS(year, api_key, variables, state_code=None):
-    # Extract ACS Data
-    acs_df = extract_ACS(api_key=api_key, year=year, variables=variables, state_code=None)
-    # Preprocess the ACS Data
+def extract_and_preprocess_ACS_data(year, api_key, state_code=None):
+    acs_df = extract_ACS_data(api_key=api_key, year=year, state_code=None)
     acs_df = preprocess_ACS(acs_df) 
     return acs_df
 

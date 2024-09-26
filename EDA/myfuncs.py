@@ -153,3 +153,36 @@ def extract_state_mapper():
         df.loc[length] = row_data
     df.columns = ['State Name', 'State Code (FIPS)', 'State Code (USPS)']   
     return df 
+
+#%% 
+def extract_airport_info():
+    url = 'https://www.transtats.bts.gov/ONTIME/AirportInfo.html'
+    response = requests.get(url)
+    assert response.status_code == 200
+    soup = BeautifulSoup(response.text, 'lxml')
+
+    table = soup.find('table')
+    rows = table.find_all('tr')
+
+    # Extract table data into a df
+    header_row = rows[0]
+    meta_headers = header_row.find_all('th')
+    headers = [meta_header.get_text(strip=True) for meta_header in meta_headers]
+    df_airports = pd.DataFrame(columns=headers)
+    for row in rows[1:]: #skip header row
+        row_data = [td.get_text(strip=True) for td in row.find_all('td')]
+        newrow_idx = len(df_airports) # newrow_idx = [lastrow_idx] +1 = [len(df)-1] +1 = len(df)
+        df_airports.loc[newrow_idx] = row_data
+    # df_airports
+    col_name = 'Airport/City/State Name'
+    # df_airports[col_name] = df_airports['Airport/City/State Name'].str.strip().str.rstrip(',') #doesn't work, still have additional column of "None" values -> use n=2 instead
+    new_cols = col_name.split('/') # Expand Airport/City/State Name into three separate columns
+    df_airports[new_cols] = df_airports[df_airports.columns[1]].str.split(',', n=2, expand=True) #splits the string only at the first two commas
+    df_airports.drop(columns=[col_name],inplace=True)
+    df_airports.rename(columns={
+        'State Name':'State Code (USPS)',
+        'Airport': 'Airport Name'
+        }, 
+        inplace=True
+    )
+    return df_airports

@@ -1,0 +1,217 @@
+,Airport Code,Airport Name,City,State Code (USPS),State Name,State Code (FIPS)
+0,ABE,Lehigh Valley International, Allentown,PA,Pennsylvania,42.0
+1,ABI,Abilene Regional, Abilene,TX,Texas,48.0
+2,ABQ,Albuquerque International, Albuquerque,NM,New Mexico,35.0
+3,ACK,Nantucket Memorial, Nantucket,MA,Massachusetts,25.0
+4,ADQ,Kodiak, Kodiak,AK,Alaska,2.0
+5,AGS,Augusta Regional, Augusta,GA,Georgia,13.0
+6,AKN,King Salmon, King Salmon,AK,Alaska,2.0
+7,ALB,Albany County, Albany,NY,New York,36.0
+8,ALO,Waterloo Municipal, Waterloo,IA,Iowa,19.0
+9,AMA,Amarillo International, Amarillo,TX,Texas,48.0
+10,ANC,Anchorage International, Anchorage,AK,Alaska,2.0
+11,ANI,Aniak, Aniak,AK,Alaska,2.0
+12,ATL,Hartsfield International, Atlanta,GA,Georgia,13.0
+13,ATW,Outagamie County Regional, Appleton,WI,Wisconsin,55.0
+14,AUS,Austin-Bergstrom International, Austin,TX,Texas,48.0
+15,AVL,Asheville Regional, Asheville,NC,North Carolina,37.0
+16,AVP,Wilkes-Barre/Scranton International, Scranton/Wilkes-Barre,PA,Pennsylvania,42.0
+17,AZO,Kalamazoo/Battle Creek International, Kalamazoo,MI,Michigan,26.0
+18,BDL,Bradley International, Hartford,CT,Connecticut,9.0
+19,BET,Bethel, Bethel,AK,Alaska,2.0
+20,BFL,Meadows Field, Bakersfield,CA,California,6.0
+21,BGM,Binghamton Regional, Binghamton,NY,New York,36.0
+22,BGR,Bangor International, Bangor,ME,Maine,23.0
+23,BHM,Birmingham International, Birmingham,AL,Alabama,1.0
+24,BIL,Billings Logan International, Billings,MT,Montana,30.0
+25,BIS,Bismarck Municipal, Bismarck,ND,North Dakota,38.0
+26,BNA,Nashville International, Nashville,TN,Tennessee,47.0
+27,BOI,Boise Air Terminal/Gowen Field, Boise,ID,Idaho,16.0
+28,BOS,Logan International, Boston,MA,Massachusetts,25.0
+30,BRO,Brownsville/South Padre Island International, Brownsville,TX,Texas,48.0
+31,BRW,Wiley Post-Will Rogers Memorial, Barrow,AK,Alaska,2.0
+32,BTR,Baton Rouge Metropolitan, Baton Rouge,LA,Louisiana,22.0
+33,BTV,Burlington International, Burlington,VT,Vermont,50.0
+34,BUF,Buffalo Niagra International, Buffalo,NY,New York,36.0
+35,BUR,Burbank-Glendale-Pasadena, Burbank,CA,California,6.0
+36,BWI,Baltimore/Washington International, Baltimore,MD,Maryland,24.0
+37,BZN,Gallatin Field, Bozeman,MT,Montana,30.0
+38,CAE,Columbia Metropolitan, Columbia,SC,South Carolina,45.0
+39,CAK,Akron-Canton, Akron/Canton,OH,Ohio,39.0
+40,CDV,Cordova-Mile 13, Cordova,AK,Alaska,2.0
+41,CHA,Lovell Field, Chattanooga,TN,Tennessee,47.0
+42,CHS,Charleston Air Force Base/International, Charleston,SC,South Carolina,45.0
+43,CID,The Eastern Iowa, Cedar Rapids,IA,Iowa,19.0
+44,CLE,Cleveland-Hopkins International, Cleveland,OH,Ohio,39.0
+45,CLT,Charlotte Douglas International, Charlotte,NC,North Carolina,37.0
+46,CMH,Port Columbus International, Columbus,OH,Ohio,39.0
+47,COS,Colorado Springs, Colorado Springs,CO,Colorado,8.0
+48,CRP,Corpus Christi International, Corpus Christi,TX,Texas,48.0
+49,CRW,Yeager, Charleston,WV,West Virginia,54.0
+50,CSG,Columbus Metropolitan, Columbus,GA,Georgia,13.0
+51,CVG,Cincinnati/Northern Kentucky International, Cincinnati,OH,Ohio,39.0
+52,DAB,Daytona Beach International, Daytona Beach,FL,Florida,12.0
+53,DAL,Dallas Love Field, Dallas/Ft. Worth,TX,Texas,48.0
+54,DAY,James M Cox/Dayton International, Dayton,OH,Ohio,39.0
+55,DCA,Ronald Reagan Washington National, Washington,DC,District of Columbia,11.0
+56,DEN,Denver International, Denver,CO,Colorado,8.0
+57,DFW,Dallas/Ft.Worth International, Dallas/Ft. Worth,TX,Texas,48.0
+58,DLG,Dillingham, Dillingham,AK,Alaska,2.0
+59,DLH,Duluth International, Duluth,MN,Minnesota,27.0
+60,DRO,Durango-La Plata County, Durango,CO,Colorado,8.0
+61,DSM,Des Moines International, Des Moines,IA,Iowa,19.0
+62,DTW,Detroit Metropolitan Wayne County, Detroit,MI,Michigan,26.0
+63,DUT,Dutch Harbor, Dutch Harbor,AK,Alaska,2.0
+64,EGE,Eagle County Regional, Eagle,CO,Colorado,8.0
+65,ELM,Elmira/Corning Regional, Elmira,NY,New York,36.0
+66,ELP,El Paso International, El Paso,TX,Texas,48.0
+67,ERI,Erie International, Erie,PA,Pennsylvania,42.0
+68,EUG,Mahlon Sweet Field, Eugene,OR,Oregon,41.0
+69,EVV,Evansville Regional, Evansville,IN,Indiana,18.0
+70,EWR,Newark International, Newark,NJ,New Jersey,34.0
+71,FAI,Fairbanks International, Fairbanks,AK,Alaska,2.0
+72,FAR,Hector International, Fargo,ND,North Dakota,38.0
+73,FAT,Fresno Air Terminal, Fresno,CA,California,6.0
+74,FAY,Fayetteville Regional/Grannis Field, Fayetteville,NC,North Carolina,37.0
+75,FCA,Glacier Park International, Kalispell,MT,Montana,30.0
+76,FLL,Ft Lauderdale-Hollywood International, Ft. Lauderdale,FL,Florida,12.0
+77,FNT,Bishop International, Flint,MI,Michigan,26.0
+78,FSD,Joe Foss Field, Sioux Falls,SD,South Dakota,46.0
+79,FWA,Ft. Wayne International, Ft. Wayne,IN,Indiana,18.0
+80,GEG,Spokane International, Spokane,WA,Washington,53.0
+81,GFK,Grand Forks International, Grand Forks,ND,North Dakota,38.0
+82,GNV,Gainesville Regional, Gainesville,FL,Florida,12.0
+83,GPT,Gulfport-Biloxi Regional, Gulfport,MS,Mississippi,28.0
+84,GRB,Austin Straubel International, Green Bay,WI,Wisconsin,55.0
+85,GRR,Gerald R. Ford International, Grand Rapids,MI,Michigan,26.0
+86,GSO,Piedmont Triad International, Greensboro/High Point,NC,North Carolina,37.0
+87,GSP,Greenville-Spartanburg International, Greenville/Spartanburg,SC,South Carolina,45.0
+88,GST,Gustavus, Gustavus,AK,Alaska,2.0
+89,GTF,Great Falls International, Great Falls,MT,Montana,30.0
+90,GUC,Gunnison County, Gunnison,CO,Colorado,8.0
+92,HDN,Yampa Valley, Steamboat Springs,CO,Colorado,8.0
+93,HLN,Helena Regional, Helena,MT,Montana,30.0
+95,HOU,William P Hobby, Houston,TX,Texas,48.0
+96,HPN,Westchester County, White Plains,NY,New York,36.0
+97,HRL,Rio Grande Valley International, Harlingen,TX,Texas,48.0
+98,HSV,Huntsville International, Huntsville/Decatur,AL,Alabama,1.0
+99,HTS,Tri-State, Huntington,WV,West Virginia,54.0
+100,HVN,Tweed-New Haven, New Haven,CT,Connecticut,9.0
+101,IAD,Washington Dulles International, Washington,DC,District of Columbia,11.0
+102,IAH,George Bush Intercontinental, Houston,TX,Texas,48.0
+103,ICT,Wichita Mid-Continent, Wichita,KS,Kansas,20.0
+104,IDA,Fanning Field, Idaho Falls,ID,Idaho,16.0
+105,ILM,New Hanover International, Wilmington,NC,North Carolina,37.0
+106,IND,Indianapolis International, Indianapolis,IN,Indiana,18.0
+107,ISP,Long Island-MacArthur, Islip/Long Island,NY,New York,36.0
+108,ITH,Tompkins County, Ithaca,NY,New York,36.0
+110,JAC,Jackson Hole, Jackson,WY,Wyoming,56.0
+111,JAN,Jackson International, Jackson,MS,Mississippi,28.0
+112,JAX,Jacksonville International, Jacksonville,FL,Florida,12.0
+113,JFK,John F Kennedy International, New York,NY,New York,36.0
+114,JNU,Juneau International, Juneau,AK,Alaska,2.0
+116,KSM,St Mary's Airport, St. Mary's,AK,Alaska,2.0
+117,KTN,Ketchikan International, Ketchikan,AK,Alaska,2.0
+118,LAN,Capital City, Lansing,MI,Michigan,26.0
+119,LAS,McCarran International, Las Vegas,NV,Nevada,32.0
+120,LAX,Los Angeles International, Los Angeles,CA,California,6.0
+121,LBB,Lubbock International, Lubbock,TX,Texas,48.0
+122,LEX,Blue Grass, Lexington/Frankfort,KY,Kentucky,21.0
+123,LFT,Lafayette Regional, Lafayette,LA,Louisiana,22.0
+124,LGA,LaGuardia, New York,NY,New York,36.0
+125,LGB,Long Beach, Long Beach,CA,California,6.0
+126,LIH,Lihue, Kauai Island,HI,Hawaii,15.0
+127,LIT,Adams Field, Little Rock,AR,Arkansas,5.0
+128,LNK,Lincoln Municipal, Lincoln,NE,Nebraska,31.0
+129,LSE,La Cross Municipal, La Crosse,WI,Wisconsin,55.0
+130,LWB,Greenbrier Valley, Lewisburg,WV,West Virginia,54.0
+131,MAF,Midland International, Midland/Odessa,TX,Texas,48.0
+132,MBS,MBS International, Saginaw,MI,Michigan,26.0
+133,MCI,Kansas City International, Kansas City,MO,Missouri,29.0
+134,MCO,Orlando International, Orlando,FL,Florida,12.0
+135,MDT,Harrisburg International, Harrisburg,PA,Pennsylvania,42.0
+136,MDW,Chicago Midway, Chicago,IL,Illinois,17.0
+137,MEM,Memphis International, Memphis,TN,Tennessee,47.0
+138,MFE,McAllen Miller International, Mission/Mcallen,TX,Texas,48.0
+139,MFR,Rogue Valley International-Medford, Medford,OR,Oregon,41.0
+140,MGM,Montgomery Regional, Montgomery,AL,Alabama,1.0
+141,MHT,Manchester, Manchester,NH,New Hampshire,33.0
+142,MIA,Miami International, Miami,FL,Florida,12.0
+143,MKE,General Mitchell International, Milwaukee,WI,Wisconsin,55.0
+144,MLB,Melbourne International, Melbourne,FL,Florida,12.0
+145,MLI,Quad-City International, Moline,IL,Illinois,17.0
+146,MLU,Monroe Regional, Monroe,LA,Louisiana,22.0
+147,MOB,Mobile Regional, Mobile,AL,Alabama,1.0
+148,MOT,Minot International, Minot,ND,North Dakota,38.0
+149,MRY,Monterey Peninsula, Monterey,CA,California,6.0
+150,MSN,Dane County Regional, Madison,WI,Wisconsin,55.0
+151,MSO,Missoula International, Missoula,MT,Montana,30.0
+152,MSP,Minneapolis-St Paul International, Minneapls/St Paul,MN,Minnesota,27.0
+153,MSY,New Orleans International, New Orleans,LA,Louisiana,22.0
+154,MTJ,Montrose Regional, Montrose,CO,Colorado,8.0
+155,MYR,Myrtle Beach International, Myrtle Beach,SC,South Carolina,45.0
+156,OAJ,Albert J Ellis, Jacksonville,NC,North Carolina,37.0
+157,OAK,Oakland International, Oakland,CA,California,6.0
+158,OGG,Kahului, Kahului,HI,Hawaii,15.0
+159,OKC,Will Rogers World, Oklahoma City,OK,Oklahoma,40.0
+160,OMA,Eppley Airfield, Omaha,NE,Nebraska,31.0
+161,OME,Nome, Nome,AK,Alaska,2.0
+162,ONT,Ontario International, Ontario,CA,California,6.0
+163,ORD,Chicago O'Hare International, Chicago,IL,Illinois,17.0
+164,ORF,Norfolk International, Norfolk/Virginia Beach,VA,Virginia,51.0
+165,OTZ,Ralph Wien Memorial, Kotzebue,AK,Alaska,2.0
+166,PBI,Palm Beach International, West Palm Beach,FL,Florida,12.0
+167,PDX,Portland International, Portland,OR,Oregon,41.0
+168,PFN,Panama City-Bay County International, Panama City,FL,Florida,12.0
+169,PHF,Newport News/Williamsburg International, Newport News,VA,Virginia,51.0
+170,PHL,Philadelphia International, Philadelphia,PA,Pennsylvania,42.0
+171,PHX,Phoenix Sky Harbor International, Phoenix,AZ,Arizona,4.0
+172,PIA,Greater Peoria Regional, Peoria,IL,Illinois,17.0
+173,PIT,Pittsburgh International, Pittsburgh,PA,Pennsylvania,42.0
+174,PNS,Pensacola Regional, Pensacola,FL,Florida,12.0
+175,PSC,Tri-Cities, Pasco,WA,Washington,53.0
+176,PSG,Petersburg James A. Johnson, Petersburg,AK,Alaska,2.0
+177,PSP,Palm Springs International, Indio/Palm Springs,CA,California,6.0
+178,PVD,T. F. Green International, Providence,RI,Rhode Island,44.0
+179,PWM,Portland International Jetport, Portland,ME,Maine,23.0
+180,RAP,Rapid City Regional, Rapid City,SD,South Dakota,46.0
+181,RDU,Raleigh-Durham International, Raleigh/Durham,NC,North Carolina,37.0
+182,RIC,Richmond International, Richmond,VA,Virginia,51.0
+183,RNO,Reno Cannon International, Reno,NV,Nevada,32.0
+184,ROA,Roanoke Regional, Roanoke,VA,Virginia,51.0
+185,ROC,Rochester International, Rochester,NY,New York,36.0
+186,RST,Rochester International, Rochester,MN,Minnesota,27.0
+187,RSW,Southwest Florida International, Ft. Myers,FL,Florida,12.0
+188,SAN,San Diego International-Lindberg, San Diego,CA,California,6.0
+189,SAT,San Antonio International, San Antonio,TX,Texas,48.0
+190,SAV,Savannah International, Savannah,GA,Georgia,13.0
+191,SBA,Santa Barbara Municipal, Santa Barbara,CA,California,6.0
+192,SBN,South Bend Regional, South Bend,IN,Indiana,18.0
+193,SCC,Deadhorse, Deadhorse,AK,Alaska,2.0
+194,SDF,Standiford Field, Louisville,KY,Kentucky,21.0
+195,SEA,Seattle Tacoma International, Seattle,WA,Washington,53.0
+196,SFO,San Francisco International, San Francisco,CA,California,6.0
+197,SGF,Springfield-Branson Regional, Springfield,MO,Missouri,29.0
+198,SHV,Shreveport Regional, Shreveport,LA,Louisiana,22.0
+199,SIT,Sitka Rocky Gutierrez, Sitka,AK,Alaska,2.0
+200,SJC,San Jose International, San Jose,CA,California,6.0
+202,SLC,Salt Lake City International, Salt Lake City,UT,Utah,49.0
+203,SMF,Sacramento Executive, Sacramento,CA,California,6.0
+204,SNA,John Wayne/Orange County, Orange County,CA,California,6.0
+206,SRQ,Sarasota/Bradenton, Sarasota/Bradenton,FL,Florida,12.0
+207,STL,Lambert-St Louis International, St. Louis,MO,Missouri,29.0
+210,SUX,Sioux Gateway, Sioux City,IA,Iowa,19.0
+211,SWF,Stewart International, Newburgh,NY,New York,36.0
+212,SYR,Syracuse Hancock International, Syracuse,NY,New York,36.0
+213,TLH,Tallahassee Regional, Tallahassee,FL,Florida,12.0
+214,TOL,Toledo Express, Toledo,OH,Ohio,39.0
+215,TPA,Tampa International, Tampa,FL,Florida,12.0
+216,TRI,Tri-Cities Regional, Bristol,TN,Tennessee,47.0
+217,TUL,Tulsa International, Tulsa,OK,Oklahoma,40.0
+218,TUS,Tucson International, Tucson,AZ,Arizona,4.0
+219,TVC,Cherry Capital, Traverse City,MI,Michigan,26.0
+220,TWF,Joslin Field-Magic Valley Regional, Twin Falls,ID,Idaho,16.0
+221,TYS,McGhee Tyson, Knoxville,TN,Tennessee,47.0
+222,VPS,Eglin Air Force Base, Valparaiso,FL,Florida,12.0
+223,WRG,Wrangell, Wrangell,AK,Alaska,2.0
+224,YAK,Yakutat, Yakutat,AK,Alaska,2.0

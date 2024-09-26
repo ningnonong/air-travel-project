@@ -5,6 +5,9 @@ __pycache__/
 # Ignore virtual environment
 .venv/
 
+# Ignore environment files containing sensitive info
+.env
+
 # Ignore redundant files
 PJitrapon/
 .DS_Store

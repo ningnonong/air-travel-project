@@ -28,7 +28,7 @@ Objectid,Year,Airport Code,Enplanements,Passengers,Departures,Arrivals,Freight,M
 27,2023,BNA,11029844,11266465,102409,102303.0,64949368,42888,Nashville International, Nashville,TN,Tennessee,47.0
 28,2023,AUS,10336419,10601453,97336,97322.0,109158945,1024083,Austin-Bergstrom International, Austin,TX,Texas,48.0
 29,2023,MDW,10287721,10541877,84356,84304.0,19396908,271667,Chicago Midway, Chicago,IL,Illinois,17.0
-30,2023,HNL,8683570,8712287,84008,84342.0,403171072,48837780,Honolulu International, Honolulu,"Oahu, HI",,
+30,2023,HNL,8683570,8712287,84008,84342.0,403171072,48837780,Honolulu International, Honolulu,HI,Hawaii,15.0
 31,2023,DAL,8552790,8876445,78580,78500.0,14438259,171210,Dallas Love Field, Dallas/Ft. Worth,TX,Texas,48.0
 32,2023,PDX,7746872,7757400,76692,77234.0,268899131,11417331,Portland International, Portland,OR,Oregon,41.0
 33,2023,IAD,7546375,7591255,79997,80397.0,96222856,1905159,Washington Dulles International, Washington,DC,District of Columbia,11.0
@@ -40,7 +40,6 @@ Objectid,Year,Airport Code,Enplanements,Passengers,Departures,Arrivals,Freight,M
 39,2023,SJC,5603226,5739903,54200,54069.0,36828707,2003,San Jose International, San Jose,CA,California,6.0
 40,2023,MCI,5599391,5721382,52399,52450.0,110004470,2001070,Kansas City International, Kansas City,MO,Missouri,29.0
 41,2023,SNA,5524075,5543966,48705,48596.0,24451921,13125,John Wayne/Orange County, Orange County,CA,California,6.0
-42,2023,SJU,5356377,5369531,46433,45366.0,132448723,5717439,Luis Munoz Marin International, San Juan,PR,,
 43,2023,OAK,5263628,5383898,58630,58705.0,540965049,6243037,Oakland International, Oakland,CA,California,6.0
 44,2023,SAT,5025756,5122138,43710,43524.0,100109244,3038820,San Antonio International, San Antonio,TX,Texas,48.0
 45,2023,RSW,4808645,4863541,36077,36007.0,17515300,3120,Southwest Florida International, Ft. Myers,FL,Florida,12.0
@@ -69,7 +68,7 @@ Objectid,Year,Airport Code,Enplanements,Passengers,Departures,Arrivals,Freight,M
 68,2023,RNO,2215758,2227713,23501,23310.0,68408487,899254,Reno Cannon International, Reno,NV,Nevada,32.0
 69,2023,OKC,2133840,2211347,24398,24526.0,29115060,9712,Will Rogers World, Oklahoma City,OK,Oklahoma,40.0
 70,2023,SRQ,2127753,2139417,16413,16432.0,127281,0,Sarasota/Bradenton, Sarasota/Bradenton,FL,Florida,12.0
-71,2023,KOA,2055155,2061662,21244,21311.0,41430534,1187629,Kona International at Ke-Ahole, Kona,"Hawaii, HI",,
+71,2023,KOA,2055155,2061662,21244,21311.0,41430534,1187629,Kona International at Ke-Ahole, Kona,HI,Hawaii,15.0
 72,2023,GEG,2002246,2007243,23196,24996.0,68688560,3327,Spokane International, Spokane,WA,Washington,53.0
 73,2023,ELP,1995590,2040339,21682,21929.0,90827994,9445,El Paso International, El Paso,TX,Texas,48.0
 74,2023,TUS,1920614,1938221,18181,18192.0,30081806,0,Tucson International, Tucson,AZ,Arizona,4.0
@@ -102,10 +101,9 @@ Objectid,Year,Airport Code,Enplanements,Passengers,Departures,Arrivals,Freight,M
 106,2023,ICT,842987,867007,11925,11956.0,24068798,2913,Wichita Mid-Continent, Wichita,KS,Kansas,20.0
 107,2023,EUG,841916,842690,9511,9466.0,951387,0,Mahlon Sweet Field, Eugene,OR,Oregon,41.0
 109,2023,HSV,723751,729263,12004,12011.0,32414160,23380,Huntsville International, Huntsville/Decatur,AL,Alabama,1.0
-110,2023,STT,701396,701405,13923,14620.0,275691,0,Cyril E. King, St. Thomas,VI,,
 111,2023,CID,690801,691974,9104,9109.0,36156110,0,The Eastern Iowa, Cedar Rapids,IA,Iowa,19.0
 112,2023,MAF,684271,700207,10049,10535.0,2339838,0,Midland International, Midland/Odessa,TX,Texas,48.0
-113,2023,ITO,684175,684329,9109,9123.0,13325009,2,General Lyman Field, Hilo,"Hawaii, HI",,
+113,2023,ITO,684175,684329,9109,9123.0,13325009,2,General Lyman Field, Hilo,HI,Hawaii,15.0
 115,2023,LEX,665252,665744,8892,8887.0,5994,0,Blue Grass, Lexington/Frankfort,KY,Kentucky,21.0
 116,2023,FSD,655230,657726,9405,9503.0,38492359,32639,Joe Foss Field, Sioux Falls,SD,South Dakota,46.0
 117,2023,ILM,655115,657112,9029,9018.0,1327226,0,New Hanover International, Wilmington,NC,North Carolina,37.0
@@ -132,7 +130,6 @@ Objectid,Year,Airport Code,Enplanements,Passengers,Departures,Arrivals,Freight,M
 139,2023,FCA,456142,456502,5120,5144.0,1884771,0,Glacier Park International, Kalispell,MT,Montana,30.0
 140,2023,PSC,438068,438896,6767,6011.0,1340058,0,Tri-Cities, Pasco,WA,Washington,53.0
 142,2023,BIL,428755,431078,10473,10615.0,32858830,9044,Billings Logan International, Billings,MT,Montana,30.0
-143,2023,BQN,425461,425461,3180,3413.0,18285407,0,Rafael Hernandez, Aguadilla,PR,,
 144,2023,ABE,419372,423043,6785,6629.0,147649056,0,Lehigh Valley International, Allentown,PA,Pennsylvania,42.0
 145,2023,TLH,416321,421410,7148,7215.0,7654975,54,Tallahassee Regional, Tallahassee,FL,Florida,12.0
 147,2023,SBN,411225,412171,6827,6840.0,9330049,0,South Bend Regional, South Bend,IN,Indiana,18.0
@@ -161,7 +158,6 @@ Objectid,Year,Airport Code,Enplanements,Passengers,Departures,Arrivals,Freight,M
 177,2023,BIS,258342,258954,3989,4179.0,419961,0,Bismarck Municipal, Bismarck,ND,North Dakota,38.0
 178,2023,MLB,249286,252053,2830,2837.0,12029,0,Melbourne International, Melbourne,FL,Florida,12.0
 179,2023,MTJ,244158,250006,2921,2925.0,2,0,Montrose Regional, Montrose,CO,Colorado,8.0
-181,2023,STX,235368,235538,8806,8932.0,121732,0,Henry E. Rholsen, St. Croix,VI,,
 182,2023,LFT,229797,229814,5048,5065.0,11439588,1,Lafayette Regional, Lafayette,LA,Louisiana,22.0
 183,2023,EGE,226791,226791,3014,3015.0,0,285,Eagle County Regional, Eagle,CO,Colorado,8.0
 184,2023,TRI,220879,222257,4072,4073.0,1795,0,Tri-Cities Regional, Bristol,TN,Tennessee,47.0
@@ -196,7 +192,6 @@ Objectid,Year,Airport Code,Enplanements,Passengers,Departures,Arrivals,Freight,M
 239,2023,SCC,82296,83301,2955,2881.0,6601641,6404754,Deadhorse, Deadhorse,AK,Alaska,2.0
 241,2023,ABI,79820,83829,1902,2174.0,447481,0,Abilene Regional, Abilene,TX,Texas,48.0
 242,2023,SWF,77283,78204,1263,1428.0,13467517,19401281,Stewart International, Newburgh,NY,New York,36.0
-246,2023,SPN,73233,73233,12353,12209.0,1174097,0,Saipan International, Saipan,Mariana Islands,,
 248,2023,TOL,70298,70741,942,949.0,9695014,0,Toledo Express, Toledo,OH,Ohio,39.0
 251,2023,PHF,69401,70130,1500,1501.0,13047,0,Newport News/Williamsburg International, Newport News,VA,Virginia,51.0
 254,2023,OME,66304,78388,9922,9936.0,4332990,7708302,Nome, Nome,AK,Alaska,2.0

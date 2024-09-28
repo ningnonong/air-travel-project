@@ -11,3 +11,8 @@ __pycache__/
 # Ignore redundant files
 PJitrapon/
 .DS_Store
+
+# Ignore archived files and sensitive info
+mySSHkey
+mySSHkey.pub
+EDA/Archive

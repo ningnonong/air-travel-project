@@ -9,10 +9,9 @@ __pycache__/
 .env
 
 # Ignore redundant files
-/Users/ningnong/Desktop/MADS/SIADS696_MilestoneII/Air Travel Project/EDA/Archive/Milestone2-2.ipynb
+PJitrapon/
 .DS_Store
 
-# Ignore archived files and sensitive info
-mySSHkey
-mySSHkey.pub
+# Ignore all archived files
 EDA/Archive
+

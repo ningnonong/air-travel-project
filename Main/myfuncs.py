@@ -185,4 +185,5 @@ def extract_airport_info():
         }, 
         inplace=True
     )
+    df_airports['State Code (USPS)'] = df_airports['State Code (USPS)'].str.strip()
     return df_airports

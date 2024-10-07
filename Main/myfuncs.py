@@ -2,6 +2,9 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import matplotlib as mpl
 
 #%% 
 def extract_FRED_data(url,variable):
@@ -187,3 +190,31 @@ def extract_airport_info():
     )
     df_airports['State Code (USPS)'] = df_airports['State Code (USPS)'].str.strip()
     return df_airports
+#%%
+def plot_timeseries(df,y='Flight Count', year=None, hue='Day of Week'):
+    # Use the tab10 colormap
+    tab10 = mpl.colormaps['tab10']
+
+    if hue=='Day of Week':
+        # Assign tab10 colors to each day of the week manually
+        day_of_week_palette = {
+            'Mon': tab10(0),
+            'Tue': tab10(1),
+            'Wed': tab10(2),
+            'Thu': tab10(3),
+            'Fri': tab10(4),
+            'Sat': tab10(5),
+            'Sun': tab10(6)
+        }
+        palette = day_of_week_palette
+    else:
+        palette = 'tab10'
+
+    if year:
+        tmp = df[df['Year']==year]
+    else: 
+        tmp = df.copy()
+    sns.lineplot(data=tmp, x=tmp.index, y=y,hue=hue,palette=palette)
+    plt.legend(loc='lower left')
+    plt.show()
+# %%

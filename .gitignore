@@ -12,7 +12,14 @@ __pycache__/
 /Users/ningnong/Desktop/MADS/SIADS696_MilestoneII/Air Travel Project/EDA/Archive/Milestone2-2.ipynb
 .DS_Store
 
+# Ignore large csv files
+Main/assets/flight_data2.csv
+Main/flight_data2.csv
+Main/assets/flight_data_main.csv
+
+
 # Ignore archived files and sensitive info
 mySSHkey
 mySSHkey.pub
 EDA/Archive
+

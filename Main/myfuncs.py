@@ -218,3 +218,26 @@ def plot_timeseries(df,y='Flight Count', year=None, hue='Day of Week'):
     plt.legend(loc='lower left')
     plt.show()
 # %%
+def prophet_week(S_week, n_years=5):
+    S = S_week.copy()
+    df = pd.DataFrame(S).reset_index()
+    df.columns = ['ds','y']
+    df['Year'] = df.ds.dt.year
+    df = df[df.Year != 2020]
+    years = df.Year.unique()
+    last_year = max(years)
+    df_test = df[df.Year == last_year]
+    S_test = df_test[['ds','y']].set_index('ds')
+    df_train = df[df.Year != last_year]
+    
+    m = Prophet(yearly_seasonality=True)
+    m.fit(df_train)
+    future = m.make_future_dataframe(periods=365*n_years)
+    forecast = m.predict(future)
+
+    m.plot(forecast)
+    plt.plot(S_test.index, S_test['y'], color='orange', label='True')
+    plt.legend(loc='lower left')
+    
+    plt.show()
+    # return df_test
